@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private Networks LLC - Network Consulting Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .smooth-scroll {
+      scroll-behavior: smooth;
+    }
+    .hero-bg {
+      background: linear-gradient(to right, #1e3a8a, #3b82f6);
+    }
+  </style>
+</head>
+<body class="smooth-scroll bg-gray-100">
+  <!-- Navigation -->
+  <nav class="bg-white shadow fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <h1 class="text-2xl font-bold text-blue-900">Private Networks LLC</h1>
+        </div>
+        <div class="flex items-center space-x-4">
+          <a href="#home" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+          <a href="#services" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+          <a href="#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+          <a href="#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-bg text-white pt-24 pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl md:text-5xl font-extrabold">Secure. Scalable. Seamless.</h2>
+      <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">Private Networks LLC delivers cutting-edge network consulting services to empower your business with robust, future-proof connectivity solutions.</p>
+      <a href="#contact" class="mt-6 inline-block bg-white text-blue-900 font-semibold py-3 px-6 rounded-lg shadow hover:bg-gray-200 transition">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-900">Our Services</h2>
+      <div class="mt-12 grid gap-8 md:grid-cols-3">
+        <div class="bg-gray-50 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold text-blue-900">Network Design</h3>
+          <p class="mt-4 text-gray-600">Customized network architecture tailored to your business needs, ensuring scalability and performance.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold text-blue-900">Cybersecurity Solutions</h3>
+          <p class="mt-4 text-gray-600">Advanced threat protection and compliance strategies to safeguard your data and infrastructure.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold text-blue-900">Cloud Integration</h3>
+          <p class="mt-4 text-gray-600">Seamless migration and management of cloud-based networks for enhanced flexibility and efficiency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-900">About Us</h2>
+      <p class="mt-6 text-lg text-gray-600 max-w-3xl mx-auto text-center">
+        Founded in 2015, Private Networks LLC is a trusted leader in network consulting, delivering innovative solutions to businesses worldwide. Our team of certified experts is dedicated to optimizing your network performance, ensuring security, and driving operational excellence.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-gray-900">Contact Us</h2>
+      <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+        Ready to transform your network? Reach out to our team for a consultation.
+      </p>
+      <div class="mt-8">
+        <p class="text-xl font-semibold text-blue-900">Email: <a href="mailto:michael@privatenetworks.us" class="underline hover:text-blue-600">michael@privatenetworks.us</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p>&copy; 2025 Private Networks LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
